@@ -1,24 +1,68 @@
-# AI Search Algorithms Lab
+# AI Search Algorithms – Lab Practice
 
-This repository contains my **AI lab work** where I implemented and explored **classical search algorithms** using Python.  
-The focus is on understanding how search works on **graphs** and **grids**, not on fancy frameworks.
+This repo is basically my **lab work / practice notebook** where I played around with classic AI search algorithms using Python 🧠🐍
 
-Everything here was done as part of my lab practice.
+Nothing fancy — just hands-on implementations to understand how these algorithms actually work under the hood.
 
----
+## What’s inside
 
-## What’s inside?
+### Graph Representation
 
-### 1️⃣ Graph Representation
-- A graph is created using a Python dictionary
-- Nodes are represented as strings
-- Edges are represented using adjacency lists
+* A graph is created using a Python dictionary
+* Nodes are represented as strings
+* Edges are represented using adjacency lists
 
-Example:
-```python
-graph = {
-    "S": ["A", "B", "D", "E"],
-    "A": ["S"],
-    "B": ["C", "D", "S"],
-    ...
-}
+This sets up the base structure needed for graph traversal algorithms.
+
+### Breadth First Search (BFS)
+
+* Implemented using `collections.deque`
+* Keeps track of visited nodes
+* Returns the path from **start node to goal node**
+
+Example use case in the notebook:
+
+* Start node: `S`
+* Goal node: `I`
+
+### Uniform Cost Search (UCS)
+
+* Uses Python’s built-in `heapq`
+* Implemented on a **2D grid (5x5)**
+* Supports different movement costs
+* Obstacles are represented using `-1`
+
+The goal here was to understand:
+
+* How priority queues work
+* Why UCS always expands the lowest-cost path first
+* How it differs from BFS
+
+Expected cost for the given problem:
+
+```
+13
+```
+
+> Some parts are intentionally left as TODOs since this was done as part of a lab exercise.
+
+## Files
+
+* `*.ipynb` → Jupyter Notebook containing all implementations and explanations
+
+## How to run
+
+1. Clone the repo
+
+```bash
+git clone <repo-url>
+```
+
+2. Open the notebook
+
+```bash
+jupyter notebook
+```
+
+3. Run cells step by step
+
