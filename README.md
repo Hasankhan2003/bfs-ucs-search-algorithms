@@ -38,31 +38,3 @@ The goal here was to understand:
 * Why UCS always expands the lowest-cost path first
 * How it differs from BFS
 
-Expected cost for the given problem:
-
-```
-13
-```
-
-> Some parts are intentionally left as TODOs since this was done as part of a lab exercise.
-
-## Files
-
-* `*.ipynb` → Jupyter Notebook containing all implementations and explanations
-
-## How to run
-
-1. Clone the repo
-
-```bash
-git clone <repo-url>
-```
-
-2. Open the notebook
-
-```bash
-jupyter notebook
-```
-
-3. Run cells step by step
-
